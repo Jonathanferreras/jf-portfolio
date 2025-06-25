@@ -30,7 +30,7 @@ export default async function WeatherWidget({ location }: WeatherWidgetProps) {
           <div>{error}</div>
         ) : (
           <>
-            <div>{weather?.temp || "---"}F</div>
+            <div>{weather?.temp ?? "---"}F</div>
             <div>
               <img src={weather?.icon} />
               <div>

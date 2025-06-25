@@ -36,7 +36,7 @@
     }
   ],
   "achievements": [],
-  "logo": "/assets/images/drl/drl-logo.png",
-  "video": "/assets/videos/drl-video.mp4",
+  "logo": "/images/drl-logo.png",
+  "video": "/videos/drl-video.mp4",
   "link": "https://www.drl.io/"
 }

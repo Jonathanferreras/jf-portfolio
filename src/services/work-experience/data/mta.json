@@ -68,7 +68,7 @@
     }
   ],
   "achievements": [],
-  "logo": "/assets/images/mta/mta-logo.png",
-  "video": "/assets/videos/mta-video.mp4",
+  "logo": "/images/mta-logo.png",
+  "video": "/videos/mta-video.mp4",
   "link": "https://www.mta.info/"
 }

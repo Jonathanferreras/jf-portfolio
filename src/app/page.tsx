@@ -3,6 +3,7 @@ import Image from "next/image";
 import {
   getHoursWorked,
   getAllIndustriesWorked,
+  getWorkExperienceByName,
 } from "@/services/work-experience/work-experience-service";
 import location from "@/services/weather/data/location.json";
 
@@ -13,6 +14,9 @@ import WeatherWidget from "@/components/WeatherWidget";
 export default function Home() {
   const hoursWorked = getHoursWorked();
   const industriesWorked = getAllIndustriesWorked();
+  const drlWorkExperience = getWorkExperienceByName("drl");
+  const mtaWorkExperience = getWorkExperienceByName("mta");
+
   return (
     <div className="font-[family-name:var(--font-montserrat)]">
       <main className="">
@@ -57,28 +61,54 @@ export default function Home() {
           </p>
           <div>
             <div>
-              DRL
+              <Image
+                src={drlWorkExperience?.logo ?? ""}
+                alt={`${
+                  drlWorkExperience?.companyName ?? "Company"
+                }'s company logo`}
+                width={100}
+                height={100}
+              />
               <div>
-                <h3>THE DRONE RACING LEAGUE</h3>
-                <p>SOFTWARE ENGINEER II</p>
+                <h3>{drlWorkExperience?.companyName}</h3>
+                <p>{drlWorkExperience?.position}</p>
               </div>
             </div>
             <div>
-              <div>Company description</div>
-              <div>Video</div>
+              <div>{drlWorkExperience?.description}</div>
+              <video
+                src={drlWorkExperience?.video}
+                muted
+                autoPlay
+                loop
+                playsInline
+              />
             </div>
           </div>
           <div>
             <div>
-              MTA
+              <Image
+                src={mtaWorkExperience?.logo ?? ""}
+                alt={`${
+                  mtaWorkExperience?.companyName ?? "Company"
+                }'s company logo`}
+                width={100}
+                height={100}
+              />
               <div>
-                <h3>METROPOLITAN TRANSPORTATION AUTHORITY</h3>
-                <p>APPLICATION DEVELOPMENT SPECIALIST</p>
+                <h3>{mtaWorkExperience?.companyName}</h3>
+                <p>{mtaWorkExperience?.position}</p>
               </div>
             </div>
             <div>
-              <div>Video</div>
-              <div>Company description</div>
+              <div>{mtaWorkExperience?.description}</div>
+              <video
+                src={mtaWorkExperience?.video}
+                muted
+                autoPlay
+                loop
+                playsInline
+              />
             </div>
           </div>
         </section>
