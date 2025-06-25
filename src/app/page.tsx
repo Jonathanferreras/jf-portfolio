@@ -1,15 +1,21 @@
 import Image from "next/image";
 
-import { getSortedWorkExperience } from "@/services/work-experience/work-experience-service";
+import {
+  getHoursWorked,
+  getAllIndustriesWorked,
+} from "@/services/work-experience/work-experience-service";
+import location from "@/services/weather/data/location.json";
 
-import LandingPageImage from "@/assets/landing-image.png";
-import ProfileImage from "@/assets/me.jpeg";
+import LandingPageImage from "@/assets/images/landing-image.png";
+import ProfileImage from "@/assets/images/me.jpeg";
+import WeatherWidget from "@/components/WeatherWidget";
 
 export default function Home() {
-  console.log(getSortedWorkExperience({ asc: true }));
+  const hoursWorked = getHoursWorked();
+  const industriesWorked = getAllIndustriesWorked();
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-montserrat)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="font-[family-name:var(--font-montserrat)]">
+      <main className="">
         <section>
           <h1>Engineer, Dreamer.</h1>
           <p>
@@ -17,35 +23,23 @@ export default function Home() {
             and Fuels Dreams.
           </p>
           <button>Let's Chat</button>
-          <Image src={LandingPageImage} alt="abstract image" />
+          <Image src={LandingPageImage} alt="abstract image of metal object" />
         </section>
         <section>
           <Image
             src={ProfileImage}
-            alt="Jonathan Ferreras"
+            alt="Image of Jonathan Ferreras"
             width={200}
             height={200}
           />
           <h2>Hi, I'm Jonathan.</h2>
-          <div>
-            <div>
-              <div>Based in</div>
-              <div>New York City</div>
-            </div>
-            <div>
-              <div>27F</div>
-              <div>
-                <div>Sunny</div>
-                <div>H:32 L:18</div>
-              </div>
-            </div>
-          </div>
+          <WeatherWidget location={location} />
           <div>
             <h1>THAT'S ABOUT...</h1>
             <div>
-              <div>15,080 WORK HOURS</div>
+              <div>{hoursWorked} WORK HOURS</div>
               <div>30+ APPS IN PROD</div>
-              <div>5 INDUSTRIES</div>
+              <div>{industriesWorked} INDUSTRIES</div>
             </div>
             <p>
               "Success doesn't happen overnight; it requires persistence in
@@ -98,6 +92,13 @@ export default function Home() {
           <a href="/contact">Contact</a>
         </section>
       </main>
+      <footer>
+        <section>
+          <a href="https://github.com/Jonathanferreras/jf-portfolio">
+            View source code
+          </a>
+        </section>
+      </footer>
     </div>
   );
 }

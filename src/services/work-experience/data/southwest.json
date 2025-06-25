@@ -14,24 +14,8 @@
   },
   "projects": [
     {
-      "name": "Southwest Landing Page Design",
-      "description": "",
-      "image": "/assets/images/southwest/Southwest-Landing-Page.png"
-    },
-    {
-      "name": "Southwest Mobile View Design",
-      "description": "",
-      "image": "/assets/images/southwest/Southwest-Mobile-View.png"
-    },
-    {
-      "name": "Southwest Testimonials Design",
-      "description": "",
-      "image": "/assets/images/southwest/Southwest-Testimonials-Page.png"
-    },
-    {
-      "name": "Southwest Services Design",
-      "description": "",
-      "image": "/assets/images/southwest/Southwest-Services-Page.png"
+      "name": "Southwest Myofascial Release Website",
+      "description": "Developed a responsive website for the massage therapy clinic using WordPress and custom PHP."
     }
   ],
   "achievements": [],

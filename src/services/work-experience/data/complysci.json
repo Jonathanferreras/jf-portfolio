@@ -15,18 +15,7 @@
   "projects": [
     {
       "name": "ComplySci Compliance Software",
-      "description": "",
-      "image": "/assets/images/complysci/ComplySci-Example-1.png"
-    },
-    {
-      "name": "ComplySci Compliance Software",
-      "description": "",
-      "image": "/assets/images/complysci/ComplySci-Example-2.png"
-    },
-    {
-      "name": "ComplySci Compliance Software",
-      "description": "",
-      "image": "/assets/images/complysci/ComplySci-Example-3.png"
+      "description": ""
     }
   ],
   "achievements": [],

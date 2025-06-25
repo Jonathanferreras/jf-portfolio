@@ -28,33 +28,11 @@
   "projects": [
     {
       "name": "Fleet Management System",
-      "description": "Software used to control drones during racing",
-      "image": "/assets/images/drl/DRL-Fleet-Management-v1.png"
-    },
-    {
-      "name": "Fleet Management System",
-      "description": "Software used to control drones during racing",
-      "image": "/assets/images/drl/DRL-Fleet-Management-v2-2.png"
-    },
-    {
-      "name": "Fleet Management System",
-      "description": "Software used to control drones during racing",
-      "image": "/assets/images/drl/DRL-Fleet-Management-v2-3.png"
+      "description": "Software used to control drones during racing"
     },
     {
       "name": "Timing & Scoring",
-      "description": "",
-      "image": "/assets/images/drl/DRL-Timing-Scoring.png"
-    },
-    {
-      "name": "Timing & Scoring",
-      "description": "",
-      "image": "/assets/images/drl/DRL-Timing-Scoring-2.png"
-    },
-    {
-      "name": "Timing & Scoring",
-      "description": "",
-      "image": "/assets/images/drl/DRL-Timing-Scoring-3.png"
+      "description": ""
     }
   ],
   "achievements": [],
