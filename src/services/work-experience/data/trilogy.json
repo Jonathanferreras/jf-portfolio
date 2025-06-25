@@ -1,0 +1,28 @@
+{
+  "companyName": "Trilogy Education",
+  "shortName": "trilogy",
+  "description": "Trilogy Education is a workforce accelerator that partners with universities to help companies and individuals upskill in the digital economy.",
+  "industry": "education",
+  "position": "Software Engineering Coach",
+  "startDate": "04/15/2019",
+  "endDate": "09/28/2019",
+  "isFullTime": true,
+  "technologies": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Javascript",
+      "JQuery",
+      "React.js",
+      "Redux"
+    ],
+    "backend": ["Node.js", "Express.js", "MongoDB", "MySQL", "Sequelize"],
+    "tools": ["ESlint", "Jest", "Docker", "Firebase"]
+  },
+  "projects": [],
+  "achievements": [],
+  "logo": "/assets/images/trilogy/trilogy-logo.png",
+  "video": "",
+  "link": "https://www.linkedin.com/company/trilogy-education-services/"
+}

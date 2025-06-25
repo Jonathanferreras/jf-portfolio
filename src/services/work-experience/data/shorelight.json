@@ -1,0 +1,37 @@
+{
+  "companyName": "Shorelight Education",
+  "shortName": "shorelight",
+  "description": "Shorelight Education is an education management company that partners with universities to provide international students with a pathway to higher education in the United States.",
+  "industry": "education",
+  "position": "Senior Software Engineer",
+  "startDate": "11/20/2023",
+  "endDate": "",
+  "isFullTime": true,
+  "technologies": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React.js",
+      "Redux",
+      "Material UI"
+    ],
+    "backend": ["Node.js", "Express.js", "Java", "Spring Boot", "PostGreSQL"],
+    "tools": [
+      "ESlint",
+      "Jest",
+      "Storybook",
+      "Contentful",
+      "Salesforce",
+      "Docker",
+      "Kubernetes",
+      "Amazon Web Services (AWS)",
+      "AWS Lambdas"
+    ]
+  },
+  "projects": [],
+  "achievements": [],
+  "logo": "/assets/images/shorelight/shorelight-logo.png",
+  "video": "",
+  "link": "https://shorelight.com/"
+}

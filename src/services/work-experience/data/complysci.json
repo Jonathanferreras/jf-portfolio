@@ -1,0 +1,36 @@
+{
+  "companyName": "ComplySci",
+  "shortName": "complysci",
+  "description": "ComplySci is a leading provider of compliance technology solutions for financial services firms.",
+  "industry": "finance",
+  "position": "Software Engineer",
+  "startDate": "10/19/2020",
+  "endDate": "08/05/2022",
+  "isFullTime": true,
+  "technologies": {
+    "frontend": ["HTML", "CSS", "Javascript", "Typescript", "Vue.js", "Vuex"],
+    "backend": ["C#", ".NET"],
+    "tools": ["ESlint"]
+  },
+  "projects": [
+    {
+      "name": "ComplySci Compliance Software",
+      "description": "",
+      "image": "/assets/images/complysci/ComplySci-Example-1.png"
+    },
+    {
+      "name": "ComplySci Compliance Software",
+      "description": "",
+      "image": "/assets/images/complysci/ComplySci-Example-2.png"
+    },
+    {
+      "name": "ComplySci Compliance Software",
+      "description": "",
+      "image": "/assets/images/complysci/ComplySci-Example-3.png"
+    }
+  ],
+  "achievements": [],
+  "logo": "/assets/images/complysci/complysci-logo.png",
+  "video": "",
+  "link": "https://www.comply.com/"
+}

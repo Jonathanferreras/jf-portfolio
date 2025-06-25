@@ -1,0 +1,64 @@
+{
+  "companyName": "The Drone Racing League",
+  "shortName": "drl",
+  "description": "The Drone Racing League (DRL) is a professional drone racing circuit that features high-speed, first-person-view (FPV) drone racing competitions.",
+  "industry": "sports",
+  "position": "Software Engineer II",
+  "startDate": "08/08/2022",
+  "endDate": "09/18/2023",
+  "isFullTime": true,
+  "technologies": {
+    "frontend": ["HTML", "CSS", "Javascript", "React.js", "Redux"],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Ruby",
+      "Ruby On Rails",
+      "MySQL"
+    ],
+    "tools": [
+      "ESlint",
+      "Jest",
+      "Docker",
+      "Amazon Web Services (AWS)",
+      "Google Cloud Platform (GCP)"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Fleet Management System",
+      "description": "Software used to control drones during racing",
+      "image": "/assets/images/drl/DRL-Fleet-Management-v1.png"
+    },
+    {
+      "name": "Fleet Management System",
+      "description": "Software used to control drones during racing",
+      "image": "/assets/images/drl/DRL-Fleet-Management-v2-2.png"
+    },
+    {
+      "name": "Fleet Management System",
+      "description": "Software used to control drones during racing",
+      "image": "/assets/images/drl/DRL-Fleet-Management-v2-3.png"
+    },
+    {
+      "name": "Timing & Scoring",
+      "description": "",
+      "image": "/assets/images/drl/DRL-Timing-Scoring.png"
+    },
+    {
+      "name": "Timing & Scoring",
+      "description": "",
+      "image": "/assets/images/drl/DRL-Timing-Scoring-2.png"
+    },
+    {
+      "name": "Timing & Scoring",
+      "description": "",
+      "image": "/assets/images/drl/DRL-Timing-Scoring-3.png"
+    }
+  ],
+  "achievements": [],
+  "logo": "/assets/images/drl/drl-logo.png",
+  "video": "/assets/videos/drl-video.mp4",
+  "link": "https://www.drl.io/"
+}

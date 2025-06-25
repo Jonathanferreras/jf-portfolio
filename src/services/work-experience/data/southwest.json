@@ -1,0 +1,41 @@
+{
+  "companyName": "Southwest Myofascial Release",
+  "shortName": "southwest",
+  "description": "Southwest Myofascial Release is a massage therapy clinic in Brooklyn, New York.",
+  "industry": "health",
+  "position": "Web Developer",
+  "startDate": "07/13/2018",
+  "endDate": "11/05/2018",
+  "isFullTime": true,
+  "technologies": {
+    "frontend": ["HTML", "CSS", "Javascript"],
+    "backend": ["WordPress", "PHP"],
+    "tools": ["Gulp"]
+  },
+  "projects": [
+    {
+      "name": "Southwest Landing Page Design",
+      "description": "",
+      "image": "/assets/images/southwest/Southwest-Landing-Page.png"
+    },
+    {
+      "name": "Southwest Mobile View Design",
+      "description": "",
+      "image": "/assets/images/southwest/Southwest-Mobile-View.png"
+    },
+    {
+      "name": "Southwest Testimonials Design",
+      "description": "",
+      "image": "/assets/images/southwest/Southwest-Testimonials-Page.png"
+    },
+    {
+      "name": "Southwest Services Design",
+      "description": "",
+      "image": "/assets/images/southwest/Southwest-Services-Page.png"
+    }
+  ],
+  "achievements": [],
+  "logo": "/assets/images/southwest/southwest-logo.webp",
+  "video": "",
+  "link": "https://www.southwesthealing.com/"
+}

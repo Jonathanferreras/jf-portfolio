@@ -1,0 +1,96 @@
+{
+  "companyName": "Metropolitan Transportation Authority",
+  "shortName": "mta",
+  "description": "The Metropolitan Transportation Authority (MTA) is a public benefit corporation responsible for public transportation in the U.S. state of New York, including the New York City Subway, buses, and regional rail services.",
+  "industry": "transportation",
+  "position": "Application Development Specialist",
+  "startDate": "10/05/2017",
+  "endDate": "10/16/2020",
+  "isFullTime": true,
+  "technologies": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "Bootstrap",
+      "Javascript",
+      "Typescript",
+      "React.js",
+      "Redux",
+      "React Native",
+      "Swift",
+      "IOS",
+      "Visual Basic (VB)"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "C#",
+      ".NET",
+      "Microsoft SQL Server (MSSQL)",
+      "Python",
+      "Django"
+    ],
+    "tools": [
+      "ESlint",
+      "Mocha",
+      "Chai",
+      "Azure",
+      "Amazon Web Services (AWS)",
+      "Jenkins"
+    ]
+  },
+  "projects": [
+    {
+      "name": "MTA's Subway Performance Dashboard",
+      "description": "The new Subway Public Dashboard is a user-friendly tool that tells our customers how we're doing by providing metrics of the entire system",
+      "image": "/assets/images/mta/MTA-Dashboard.png",
+      "links": [
+        {
+          "title": "View Website",
+          "url": "http://dashboard.mta.info/"
+        }
+      ]
+    },
+    {
+      "name": "MTA's Metro-North App",
+      "description": "The Official Metro-North app includes real-time train status and track information",
+      "image": "/assets/images/mta/MTA-MNRTT.png",
+      "links": [
+        {
+          "title": "IOS",
+          "url": "https://apps.apple.com/us/app/metro-north-train-time/id772051967"
+        },
+        {
+          "title": "Android",
+          "url": "https://play.google.com/store/apps/details?id=info.mta.metro_north.train_time&hl=en_US"
+        }
+      ]
+    },
+    {
+      "name": "MTA's Countdown Clocks",
+      "description": "The subway's system for giving customers updates on train arrival times and service alerts",
+      "image": "/assets/images/mta/MTA-Countdown-Clocks.png"
+    },
+    {
+      "name": "MTA's MyMTA Mobile App",
+      "description": "The new all-in-one App for Subways, Buses, and LIRR and Metro-North trains gives you everything you need to optimize your travels",
+      "image": "/assets/images/mta/MTA-MYMTA.png"
+    },
+    {
+      "name": "MTA's Outfront Screens",
+      "description": "A newly designed system that gives customers updates on train arrivals and status updates for escalator and elevators, service alerts, and systemwide changes",
+      "image": "/assets/images/mta/MTA-Outfront-Screens.png"
+    },
+    {
+      "name": "MTA's Main Website",
+      "description": "The Official website for the MTA",
+      "image": "/assets/images/mta/MTA-Website.png"
+    }
+  ],
+  "achievements": [],
+  "logo": "/assets/images/mta/mta-logo.png",
+  "video": "/assets/videos/mta-video.mp4",
+  "link": "https://www.mta.info/"
+}
