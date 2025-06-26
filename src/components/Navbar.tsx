@@ -39,7 +39,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Overlay */}
       {menuOpen && (
         <div
           onClick={() => setMenuOpen(false)}

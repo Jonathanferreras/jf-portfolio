@@ -1,14 +1,14 @@
-type MailWithStreaksIconProps = {
+type MailIconProps = {
   size?: number;
   className?: string;
   color?: string;
 };
 
-export default function MailWithStreaksIcon({
+export default function MailIcon({
   size = 24,
   className = "",
   color = "currentColor",
-}: MailWithStreaksIconProps) {
+}: MailIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,12 +22,9 @@ export default function MailWithStreaksIcon({
       strokeLinejoin="round"
       className={`stroke-current ${className}`}
     >
-      {/* Streak lines on the left */}
       <path d="M2 12h6" />
       <path d="M2 16h4" />
       <path d="M2 20h6" />
-
-      {/* Envelope */}
       <rect x="10" y="10" width="20" height="12" rx="2" />
       <path d="M10 10l10 8l10-8" />
     </svg>

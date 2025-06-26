@@ -49,12 +49,10 @@ export const getAllIndustriesWorked = () => {
 const calculateYearsSinceDate = (date: string) => {
   const startDate = new Date(date);
   const currentDate = new Date();
-  const diff =
-    (currentDate.getTime() - startDate.getTime()) /
-    1000 /
-    (60 * 60 * 24 * 7 * 4);
+  const diffInMs = currentDate.getTime() - startDate.getTime();
+  const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25); // accurate average year
 
-  return Math.floor(diff / 12);
+  return Math.round(diffInYears * 2) / 2;
 };
 
 const calculateHoursByJob = (jobs: job[]) => {

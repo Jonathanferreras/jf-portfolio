@@ -1,10 +1,12 @@
+type ArrowUpRightIconProps = {
+  size?: number;
+  className?: string;
+};
+
 export default function ArrowUpRightIcon({
   size = 20,
   className = "",
-}: {
-  size?: number;
-  className?: string;
-}) {
+}: ArrowUpRightIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

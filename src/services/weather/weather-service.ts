@@ -22,7 +22,7 @@ export const fetchWeather = async (coordinates: {
         temp: Math.round(((data.main.temp - 273.15) * 9) / 5 + 32),
         high: Math.round(((data.main.temp_max - 273.15) * 9) / 5 + 32),
         low: Math.round(((data.main.temp_min - 273.15) * 9) / 5 + 32),
-        description: data.weather[0].description.toUpperCase(),
+        description: data.weather[0].main.toUpperCase(),
         icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`,
       };
     } else {

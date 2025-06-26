@@ -26,3 +26,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fillRing {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
