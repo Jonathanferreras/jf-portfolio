@@ -114,15 +114,16 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <h1 className="text-5xl sm:text-9xl font-black text-justify self-center sm:text-left sm:self-start mt-10 sm:mt-28 text-gray-400">
+          <h1 className="text-5xl sm:text-9xl font-black text-center sm:text-left self-center sm:self-start mt-10 sm:mt-28 text-gray-400">
             CAREER <br /> HIGHLIGHTS
           </h1>
-          <p className="text-xl sm:text-2xl text-justify sm:text-left self-center sm:self-start mt-1 mb-10 sm:mb-20 text-gray-400">
+          <p className="text-xl sm:text-2xl text-center sm:text-left self-center sm:self-start mt-1 mb-10 sm:mb-20 text-gray-400">
             From designing rich web & mobile applications to building API
             services, I have crafted <br /> scalable, user-focused solutions
-            that bridge creativity and functionality, delivering <br />{" "}
+            that bridge creativity and functionality, delivering <br />
             impactful digital experiences.
           </p>
+
           <div className="flex flex-col md:grid md:grid-cols-2 gap-10 items-start w-full">
             <div className="flex flex-col gap-4 order-1">
               <div className="border border-white rounded-md p-4 flex items-center gap-4">

@@ -79,19 +79,19 @@ export default function Career() {
                         </p>
                       </div>
                     </div>
+                    <p className="text-gray-300 text-sm leading-relaxed whitespace-pre-line mb-4">
+                      {job.description}
+                    </p>
                     <p className="text-sm text-gray-400 mb-1">
                       <strong className="text-white">Duration:</strong>{" "}
                       {job.startDate} – {job.endDate || "Present"}
                     </p>
-                    <p className="text-sm text-gray-400 mb-3">
+                    <p className="text-sm text-gray-400 mb-1">
                       <strong className="text-white">Industry:</strong>{" "}
                       {job.industry}
                     </p>
-                    <p className="text-gray-300 text-sm leading-relaxed whitespace-pre-line mb-4">
-                      {job.description}
-                    </p>
                     {job.achievements?.length > 0 && (
-                      <ul className="list-disc list-inside text-sm text-white space-y-1 mb-6">
+                      <ul className="list-disc list-inside text-sm text-white space-y-1 mb-1">
                         <p className="text-sm text-gray-400 mb-3">
                           <strong className="text-white">
                             Achievements:
@@ -107,7 +107,7 @@ export default function Career() {
                     {job.projects?.length > 0 && (
                       <button
                         onClick={() => toggleExpand(job.shortName)}
-                        className="text-sm text-[color:var(--accent)] hover:underline focus:outline-none mb-10 flex items-center gap-1"
+                        className="text-sm text-[color:var(--accent)] hover:underline focus:outline-none mb-10 mt-6 flex items-center gap-1"
                       >
                         {isExpanded ? "Hide Projects" : "View Projects"}
                         <span className="transition-transform duration-200">
@@ -134,7 +134,7 @@ export default function Career() {
                         href={job.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex items-center w-fit border border-[color:var(--foreground)] text-[color:var(--foreground)] hover:bg-[color:var(--accent)] hover:text-black hover:border-[color:var(--background)] transition-colors px-4 py-2 rounded-full text-sm font-medium mb-4"
+                        className="group flex items-center w-fit border border-[color:var(--foreground)] text-[color:var(--foreground)] hover:bg-[color:var(--accent)] hover:text-black hover:border-[color:var(--background)] transition-colors px-4 py-2 rounded-full text-sm font-medium mb-4 mt-6"
                       >
                         Visit Company's Website{" "}
                         <ArrowUpRightIcon className="w-4 h-4 ml-2 text-[color:var(--foreground)] group-hover:text-black transition-colors" />
