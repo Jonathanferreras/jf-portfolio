@@ -1,7 +1,7 @@
 {
   "companyName": "Trilogy Education",
   "shortName": "trilogy",
-  "description": "Trilogy Education is a workforce accelerator that partners with universities to help companies and individuals upskill in the digital economy.",
+  "description": "Trilogy operates coding bootcamps in partnership with universities—later acquired by education company 2U (now part of edX) in 2019 for $750 million. Offers non-credit, on-campus bootcamps in subjects like full-stack web development, data analytics, UX/UI design, and fintech—across ~50 university partners, serving ~20,000 students. Operates under 2U/edX's umbrella as a workforce accelerator, connecting education with employer needs.",
   "industry": "education",
   "position": "Software Engineering Coach",
   "startDate": "04/15/2019",
@@ -21,7 +21,11 @@
     "tools": ["ESlint", "Jest", "Docker", "Firebase"]
   },
   "projects": [],
-  "achievements": [],
+  "achievements": [
+    "Taught core web technologies including HTML, CSS, JavaScript, React, Node.js, and databases through lectures, code reviews, and live debugging sessions.",
+    "Mentored students one-on-one and in groups, helping them overcome coding challenges and develop problem-solving strategies.",
+    "Fostered a collaborative learning environment, promoting pair programming, code walkthroughs, and agile practices to simulate real-world workflows."
+  ],
   "logo": "/images/trilogy-logo.png",
   "video": "",
   "link": "https://www.linkedin.com/company/trilogy-education-services/"

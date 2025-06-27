@@ -1,7 +1,7 @@
 {
   "companyName": "The Drone Racing League",
   "shortName": "drl",
-  "description": "The Drone Racing League (DRL) is a professional drone racing circuit that features high-speed, first-person-view (FPV) drone racing competitions.",
+  "description": "DRL is the premier global league for professional first-person-view (FPV) drone racing . Pilots fly custom, identical drones at speeds up to 90 mph (with RacerX model reaching record 163.5 mph) through intricate indoor and outdoor 3D courses. A hybrid of sports, media, and tech, DRL airs globally across NBC, Sky Sports, Fox Sports Asia, and streaming platforms like Twitter. They also operate DRL SIM, a virtual training simulator, and launched the autonomous racing series AIRR. DRL boasts ~75 million fans, reaching 250 million households in 140+ countries . It emphasizes innovation via partnerships (e.g., 5G streaming drones) and educational outreach through DRL Academy and the “Science of Drone Racing” curriculum",
   "industry": "sports",
   "position": "Software Engineer II",
   "startDate": "08/08/2022",
@@ -28,14 +28,22 @@
   "projects": [
     {
       "name": "Fleet Management System",
-      "description": "Software used to control drones during racing"
+      "description": "A system used to manage the fleet of drones, including tracking their status, telemetry, location, and performance metrics."
+    },
+    {
+      "name": "Event Management System",
+      "description": "A system that manages the scheduling, logistics, and operations of drone racing events."
     },
     {
       "name": "Timing & Scoring",
-      "description": ""
+      "description": "A application that aggregates data from multiple sources to provide real-time timing and scoring for DRL Pilots during racing events."
     }
   ],
-  "achievements": [],
+  "achievements": [
+    "Automated scoring logic in the Timing & Scoring platform, reducing race downtime by 6.67% and streamlining pilot ranking calculations.",
+    "Refactored the Fleet Management System, improving stability and decoupling components to accelerate future feature development.",
+    "Championed agile practices and introduced unit testing, boosting delivery velocity and increasing overall code reliability."
+  ],
   "logo": "/images/drl-logo.png",
   "video": "/videos/drl-video.mp4",
   "link": "https://www.drl.io/"

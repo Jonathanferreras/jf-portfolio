@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-import ArrowUpRightIcon from "@/components/ArrowUpRightIcon";
+import ArrowUpRightIcon from "@/components/icons/ArrowUpRightIcon";
 import Link from "next/link";
 
 export default function Navbar() {

@@ -5,15 +5,17 @@ import {
   getAllIndustriesWorked,
   getWorkExperienceByName,
   getYearsWorked,
+  getNumOfProjectsWorkedOn,
 } from "@/services/work-experience/work-experience-service";
 import location from "@/services/weather/data/location.json";
 import WeatherWidget from "@/components/WeatherWidget";
-import MailIcon from "@/components/MailIcon";
+import MailIcon from "@/components/icons/MailIcon";
 import StatRing from "@/components/StatRing";
 
 export default function Home() {
   const hoursWorked = getHoursWorked();
   const yearsWorked = getYearsWorked();
+  const projectsWorkedOn = getNumOfProjectsWorkedOn();
   const industriesWorked = getAllIndustriesWorked();
   const drlWorkExperience = getWorkExperienceByName("drl");
   const mtaWorkExperience = getWorkExperienceByName("mta");
@@ -91,7 +93,7 @@ export default function Home() {
               />
               <StatRing
                 label="APPS IN PROD"
-                value={30}
+                value={projectsWorkedOn}
                 delay={0.2}
                 strokeWidth={4}
                 size={300}
@@ -153,9 +155,36 @@ export default function Home() {
               </div>
 
               <div className="border rounded-md p-6 text-white text-sm leading-relaxed">
-                <p className="mb-4 whitespace-pre-line">
-                  {drlWorkExperience?.description}
-                </p>
+                <div className="relative max-h-24 overflow-hidden mb-4">
+                  <p className="whitespace-pre-line text-gray-300">
+                    {drlWorkExperience?.description}
+                  </p>
+                  <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[var(--background)] to-transparent pointer-events-none flex items-end justify-end pr-2 pb-1">
+                    <span className="text-gray-400 text-sm">...</span>
+                  </div>
+                </div>
+
+                {drlWorkExperience?.achievements &&
+                  drlWorkExperience.achievements.length > 0 && (
+                    <div className="relative max-h-40 overflow-hidden mb-6">
+                      <p className="text-sm text-gray-400 mb-3">
+                        <strong className="text-white">Achievements:</strong>
+                      </p>
+                      <ul className="list-disc list-inside text-sm text-white space-y-1">
+                        {drlWorkExperience.achievements.map(
+                          (achievement, i) => (
+                            <li key={i} className="text-gray-300">
+                              {achievement}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                      <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[var(--background)] to-transparent pointer-events-none flex items-end justify-end pr-2 pb-1">
+                        <span className="text-gray-400 text-sm">...</span>
+                      </div>
+                    </div>
+                  )}
+
                 <a
                   href={`/career/#${drlWorkExperience?.shortName}`}
                   className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors"
@@ -164,8 +193,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
-            <div className="hidden md:flex justify-center items-center order-2">
+            <div className="hidden md:flex justify-center items-center order-2 mt-auto mb-auto">
               <video
                 src={drlWorkExperience?.video}
                 muted
@@ -175,8 +203,7 @@ export default function Home() {
                 className="rounded-md w-full max-w-xl"
               />
             </div>
-
-            <div className="hidden md:flex justify-center items-center order-3">
+            <div className="hidden md:flex justify-center items-center order-3 mt-auto mb-auto">
               <video
                 src={mtaWorkExperience?.video}
                 muted
@@ -205,7 +232,6 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-
               <div className="block md:hidden">
                 <video
                   src={mtaWorkExperience?.video}
@@ -216,11 +242,35 @@ export default function Home() {
                   className="rounded-md w-full max-w-xl"
                 />
               </div>
-
               <div className="border border-white rounded-md p-6 text-white text-sm leading-relaxed">
-                <p className="mb-4 whitespace-pre-line">
-                  {mtaWorkExperience?.description}
-                </p>
+                <div className="relative max-h-24 overflow-hidden mb-4">
+                  <p className="whitespace-pre-line text-gray-300">
+                    {mtaWorkExperience?.description}
+                  </p>
+                  <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[var(--background)] to-transparent pointer-events-none flex items-end justify-end pr-2 pb-1">
+                    <span className="text-gray-400 text-sm">...</span>
+                  </div>
+                </div>
+                {mtaWorkExperience?.achievements &&
+                  mtaWorkExperience.achievements.length > 0 && (
+                    <div className="relative max-h-40 overflow-hidden mb-6">
+                      <p className="text-sm text-gray-400 mb-3">
+                        <strong className="text-white">Achievements:</strong>
+                      </p>
+                      <ul className="list-disc list-inside text-sm text-white space-y-1">
+                        {mtaWorkExperience.achievements.map(
+                          (achievement, i) => (
+                            <li key={i} className="text-gray-300">
+                              {achievement}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                      <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[var(--background)] to-transparent pointer-events-none flex items-end justify-end pr-2 pb-1">
+                        <span className="text-gray-400 text-sm">...</span>
+                      </div>
+                    </div>
+                  )}
                 <a
                   href={`/career#${mtaWorkExperience?.shortName}`}
                   className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors"

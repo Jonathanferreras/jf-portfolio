@@ -1,7 +1,7 @@
 {
   "companyName": "ComplySci",
   "shortName": "complysci",
-  "description": "ComplySci is a leading provider of compliance technology solutions for financial services firms.",
+  "description": "Part of the COMPLY portfolio, ComplySci provides cloud-based regulatory and compliance management software for financial institutions and asset managers. Features monitoring of employee trading, conflicts of interest, gift and entertainment logging, political contributions, and cryptocurrency compliance; supports workflows, case management, and REST API integrations. Supports over 7,000 clients including hedge funds, private equity, and large financial firms.",
   "industry": "finance",
   "position": "Software Engineer",
   "startDate": "10/19/2020",
@@ -15,10 +15,14 @@
   "projects": [
     {
       "name": "ComplySci Compliance Software",
-      "description": ""
+      "description": "Developed and maintained cloud-based compliance management software for financial institutions, focusing on employee trading, conflicts of interest, and regulatory compliance."
     }
   ],
-  "achievements": [],
+  "achievements": [
+    "Owned U.S. frontend development, building and maintaining Vue.js components to enhance user experience and performance.",
+    "Quickly ramped up on unfamiliar tech, becoming productive in Vue.js and contributing to .NET backend features.",
+    "Strengthened team delivery through effective communication with offshore developers, ensuring high-quality releases in a fast-paced Agile environment."
+  ],
   "logo": "/images/complysci-logo.png",
   "video": "",
   "link": "https://www.comply.com/"

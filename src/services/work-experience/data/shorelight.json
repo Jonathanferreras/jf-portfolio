@@ -1,7 +1,7 @@
 {
   "companyName": "Shorelight Education",
   "shortName": "shorelight",
-  "description": "Shorelight Education is an education management company that partners with universities to provide international students with a pathway to higher education in the United States.",
+  "description": "Shorelight partners with top-ranked, nonprofit U.S. universities to attract and support international students. The company delivers high-touch, technology-driven enrollment and student success services. Enables global diversity on U.S. campuses by managing recruitment, admissions support, language preparation, and persistence services. Works on a shared-revenue model with universities. A leader in the international student marketplace, aiming to “Educate the World” by enhancing access, integration, and outcomes for non-U.S. students.",
   "industry": "education",
   "position": "Senior Software Engineer",
   "startDate": "11/20/2023",
@@ -29,8 +29,33 @@
       "AWS Lambdas"
     ]
   },
-  "projects": [],
-  "achievements": [],
+  "projects": [
+    {
+      "name": "Shorelight University Portal",
+      "description": "A comprehensive portal for universities to manage international student enrollment, admissions, and support services. The portal integrates with Salesforce for CRM functionalities and Contentful for content management."
+    },
+    {
+      "name": "Shorelight's Admission Portal",
+      "description": "An admissions portal that streamlines the application process for international students, providing features like application tracking, document submission, and communication with admissions staff."
+    },
+    {
+      "name": "Shorelight's UI Components Library",
+      "description": "A universal library of UI components built with React.js and Material UI, designed to ensure consistency and reusability across all Shorelight applications."
+    },
+    {
+      "name": "Multi Factor Authentication Service",
+      "description": "Implemented a secure multi-factor authentication service to enhance the security of user accounts across Shorelight's platforms."
+    },
+    {
+      "name": "Shorelight's Student Marketplace",
+      "description": "A marketplace platform for students to access various services, resources, and opportunities available through Shorelight and its partner universities."
+    }
+  ],
+  "achievements": [
+    "Led architectural design for the company’s new Marketplace platform, promoting reusability and scalability across micro-frontends.",
+    "Spearheaded MFA integration with AWS and Okta, enhancing security for the admissions portal.",
+    "Established frontend unit testing standards, creating documentation and improving code quality across teams."
+  ],
   "logo": "/images/shorelight-logo.png",
   "video": "",
   "link": "https://shorelight.com/"

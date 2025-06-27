@@ -40,6 +40,10 @@ export const getYearsWorked = () => {
 
 export const getHoursWorked = () => calculateHoursByJob(getAllWorkExperience);
 
+export const getNumOfProjectsWorkedOn = () => {
+  return getAllWorkExperience.flatMap((job) => job.projects || []).length;
+};
+
 export const getAllIndustriesWorked = () => {
   return new Set(getAllWorkExperience.map((job) => job.industry)).size;
 };

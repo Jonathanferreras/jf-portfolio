@@ -1,7 +1,7 @@
 {
   "companyName": "Metropolitan Transportation Authority",
   "shortName": "mta",
-  "description": "The Metropolitan Transportation Authority (MTA) is a public benefit corporation responsible for public transportation in the U.S. state of New York, including the New York City Subway, buses, and regional rail services.",
+  "description": "The MTA is North America's largest public transit agency, covering New York City and surrounding regions (Long Island, Hudson Valley, Connecticut). Manages NYC subways, buses, commuter rail (LIRR, Metro-North), bridges and tunnels. In 2023, it handled ~1.15 billion annual rides, ~3.6 million daily weekday ridership. ",
   "industry": "transportation",
   "position": "Application Development Specialist",
   "startDate": "10/05/2017",
@@ -47,8 +47,12 @@
       "description": "The new Subway Public Dashboard is a user-friendly tool that tells our customers how we're doing by providing metrics of the entire system"
     },
     {
-      "name": "MTA's Metro-North App",
+      "name": "MTA's Metro-North Mobile App",
       "description": "The Official Metro-North app includes real-time train status and track information"
+    },
+    {
+      "name": "MTA's Metro-North Trip Planner",
+      "description": "The Metro-North Trip Planner is a tool that helps customers plan their trips on the Metro-North Railroad, providing information on train schedules, routes, and fares"
     },
     {
       "name": "MTA's Countdown Clocks",
@@ -59,15 +63,35 @@
       "description": "The new all-in-one App for Subways, Buses, and LIRR and Metro-North trains gives you everything you need to optimize your travels"
     },
     {
+      "name": "MTA's Bridges and Tunnels Mobile App",
+      "description": "The Official MTA Bridges and Tunnels app provides height, weight, and vehicle restrictions for all MTA bridges and tunnels. "
+    },
+    {
       "name": "MTA's Outfront Screens",
       "description": "A newly designed system that gives customers updates on train arrivals and status updates for escalator and elevators, service alerts, and systemwide changes"
+    },
+    {
+      "name": "MTA's Outfront Screens Internal Monitoring Tool",
+      "description": "An internal tool that allows MTA employees to monitor the Outfront Screens in real-time, ensuring they are functioning properly and displaying the correct information"
+    },
+    {
+      "name": "MTA's Metro Card Legacy System",
+      "description": "A system that handles the legacy MetroCard system, allowing for the management and processing of transactions related to the MetroCard"
+    },
+    {
+      "name": "Employee Suggestion Program",
+      "description": "A platform that allows MTA employees to submit suggestions for improvements and innovations within the organization, fostering a culture of continuous improvement and employee engagement"
     },
     {
       "name": "MTA's Main Website",
       "description": "The Official website for the MTA"
     }
   ],
-  "achievements": [],
+  "achievements": [
+    "Developed and maintained high-impact apps, including train arrival displays, transit dashboards, and public info systems across web and mobile platforms.",
+    "Engineered full-stack solutions using React, Node.js, .NET, SQL Server, and AWS, contributing to performance-critical systems like the MTA Performance Dashboard and Metro North Trip Planner.",
+    "Built internal tools and automation workflows, including Visual Basic and Python scripts for metro card generation and S3-based data processing, improving operational efficiency across teams."
+  ],
   "logo": "/images/mta-logo.png",
   "video": "/videos/mta-video.mp4",
   "link": "https://www.mta.info/"
