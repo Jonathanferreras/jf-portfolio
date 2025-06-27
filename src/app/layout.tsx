@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import GoogleAnalyticsHead from "@/components/GoogleAnalyticsHead";
-import GoogleAnalyticsBody from "@/components/GoogleAnalyticsBody";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -31,7 +30,6 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${montserrat.variable} antialiased`}
       >
-        <GoogleAnalyticsBody />
         <Navbar />
         <main>{children}</main>
         <Footer />
