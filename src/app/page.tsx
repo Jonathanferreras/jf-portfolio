@@ -156,9 +156,12 @@ export default function Home() {
                 <p className="mb-4 whitespace-pre-line">
                   {drlWorkExperience?.description}
                 </p>
-                <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors">
+                <a
+                  href={`/career/#${drlWorkExperience?.shortName}`}
+                  className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors"
+                >
                   READ MORE
-                </button>
+                </a>
               </div>
             </div>
 
@@ -218,9 +221,12 @@ export default function Home() {
                 <p className="mb-4 whitespace-pre-line">
                   {mtaWorkExperience?.description}
                 </p>
-                <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors">
+                <a
+                  href={`/career#${mtaWorkExperience?.shortName}`}
+                  className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors"
+                >
                   READ MORE
-                </button>
+                </a>
               </div>
             </div>
           </div>

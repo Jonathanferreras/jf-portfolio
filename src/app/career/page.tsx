@@ -29,6 +29,7 @@ export default function Career() {
 
             return (
               <div
+                id={`${job.shortName}`}
                 key={`${job.companyName}-${idx}`}
                 className={`relative flex flex-col md:flex-row ${
                   isLeft ? "md:flex-row-reverse" : ""
