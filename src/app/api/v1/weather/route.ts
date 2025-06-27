@@ -20,6 +20,7 @@ export async function GET(req: Request) {
 
     return NextResponse.json(data);
   } catch (err) {
+    console.log(err);
     return NextResponse.json({ error: "API error" }, { status: 500 });
   }
 }
