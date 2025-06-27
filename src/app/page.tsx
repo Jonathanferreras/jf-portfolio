@@ -6,8 +6,8 @@ import {
   getWorkExperienceByName,
   getYearsWorked,
   getNumOfProjectsWorkedOn,
-} from "@/services/work-experience/work-experience-service";
-import location from "@/services/weather/data/location.json";
+} from "@/lib/work-experience/work-experience-service";
+import location from "@/lib/weather/data/location.json";
 import WeatherWidget from "@/components/WeatherWidget";
 import MailIcon from "@/components/icons/MailIcon";
 import StatRing from "@/components/StatRing";

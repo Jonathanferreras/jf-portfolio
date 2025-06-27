@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { getSortedWorkExperience } from "@/services/work-experience/work-experience-service";
+import { getSortedWorkExperience } from "@/lib/work-experience/work-experience-service";
 import ArrowUpRightIcon from "@/components/icons/ArrowUpRightIcon";
 import ChevronUpIcon from "@/components/icons/ChevronUpIcon";
 import ChevronDownIcon from "@/components/icons/ChevronDownIcon";
