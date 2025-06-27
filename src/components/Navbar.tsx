@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 import ArrowUpRightIcon from "@/components/ArrowUpRightIcon";
 
@@ -55,8 +56,16 @@ export default function Navbar() {
           >
             {menuOpen ? "×" : "☰"}
           </button>
+          <a className="md:hidden" href="/">
+            <Image
+              src="/favicon.ico"
+              alt="JF Logo"
+              width={28}
+              height={28}
+              className="ml-auto"
+            />
+          </a>
         </div>
-
         <div
           className={`transition-all duration-300 ease-in-out overflow-hidden relative z-50 md:overflow-visible ${
             menuOpen
