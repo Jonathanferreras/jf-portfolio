@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import ArrowUpRightIcon from "@/components/ArrowUpRightIcon";
+import Link from "next/link";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -56,7 +57,7 @@ export default function Navbar() {
           >
             {menuOpen ? "×" : "☰"}
           </button>
-          <a className="md:hidden" href="/">
+          <Link className="md:hidden" href="/">
             <Image
               src="/favicon.ico"
               alt="JF Logo"
@@ -64,7 +65,7 @@ export default function Navbar() {
               height={28}
               className="ml-auto"
             />
-          </a>
+          </Link>
         </div>
         <div
           className={`transition-all duration-300 ease-in-out overflow-hidden relative z-50 md:overflow-visible ${

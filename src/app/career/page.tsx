@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { job } from "@/services/work-experience/types/job";
 import { getSortedWorkExperience } from "@/services/work-experience/work-experience-service";
 import ArrowUpRightIcon from "@/components/ArrowUpRightIcon";
 

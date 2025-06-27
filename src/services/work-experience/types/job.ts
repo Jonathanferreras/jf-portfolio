@@ -12,8 +12,8 @@ export type job = {
     backend: string[];
     tools: string[];
   };
-  projects: any[]; // Can be replaced with a more specific type if project structure is known
-  achievements: any[]; // Same as above
+  projects: []; // Can be replaced with a more specific type if project structure is known
+  achievements: []; // Same as above
   logo: string; // Path to image
   video: string; // URL or empty
   link: string; // URL
