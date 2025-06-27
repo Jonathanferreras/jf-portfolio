@@ -1,6 +1,5 @@
 import { fetchWeather } from "@/services/weather/weather-service";
 import { location } from "@/services/weather/types/location";
-import { weather } from "@/services/weather/types/weather";
 
 type WeatherWidgetProps = {
   location: location;
@@ -8,12 +7,12 @@ type WeatherWidgetProps = {
 
 export default async function WeatherWidget({ location }: WeatherWidgetProps) {
   let error = "";
-  const weather = await fetchWeather({
+  const weatherData = await fetchWeather({
     lat: location.lat,
     lon: location.lon,
   });
 
-  if (!weather) {
+  if (!weatherData) {
     error = "Failed to fetch weather data.";
   }
 
@@ -31,21 +30,21 @@ export default async function WeatherWidget({ location }: WeatherWidgetProps) {
       ) : (
         <div className="flex items-center gap-6">
           <div className="text-4xl font-light tracking-tight">
-            {weather?.temp ?? "---"}F
+            {weatherData?.temp ?? "---"}F
           </div>
 
           <div className="flex flex-col items-start text-sm md:text-base font-light">
             <div className="flex items-center gap-2">
               <img
-                src={weather?.icon}
-                alt={weather?.description}
+                src={weatherData?.icon}
+                alt={weatherData?.description}
                 className="w-8 h-8"
               />
-              <span>{weather?.description}</span>
+              <span>{weatherData?.description}</span>
             </div>
             <div className="flex items-center gap-2 text-xl w-full">
-              <div>H:{weather?.high ?? "--"}</div>
-              <div className="ml-auto">L:{weather?.low ?? "--"}</div>
+              <div>H:{weatherData?.high ?? "--"}</div>
+              <div className="ml-auto">L:{weatherData?.low ?? "--"}</div>
             </div>
           </div>
         </div>
