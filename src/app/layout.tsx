@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Head from "next/head";
+import GoogleAnalyticsHead from "@/components/GoogleAnalyticsHead";
+import GoogleAnalyticsBody from "@/components/GoogleAnalyticsBody";
 import Navbar from "@/components/Navbar";
-import "./globals.css";
 import Footer from "@/components/Footer";
+import "./globals.css";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -22,12 +25,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <GoogleAnalyticsHead />
+      </Head>
       <body
         className={`${montserrat.variable} ${montserrat.variable} antialiased`}
       >
+        <GoogleAnalyticsBody />
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <span className="hidden">
+          Jesus is King! If you see this, may the lord bless you. Psalms 23:4.
+        </span>
       </body>
     </html>
   );
