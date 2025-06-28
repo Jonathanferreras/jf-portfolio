@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Head from "next/head";
 import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalyticsHead from "@/components/GoogleAnalyticsHead";
 import Navbar from "@/components/Navbar";
@@ -25,9 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <GoogleAnalyticsHead />
-      </Head>
+      </head>
       <body
         className={`${montserrat.variable} ${montserrat.variable} antialiased`}
       >
