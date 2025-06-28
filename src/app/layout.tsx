@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalyticsHead from "@/components/GoogleAnalyticsHead";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main>{children}</main>
+        <Analytics />
         <Footer />
         <span className="hidden">
           Jesus is King! If you see this, may the lord bless you. Psalms 23:4.
