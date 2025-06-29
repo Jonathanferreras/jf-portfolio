@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 export default function Contact() {
   const [status, setStatus] = useState<"" | "success" | "error">("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
     const data = new FormData(e.target as HTMLFormElement);
     const res = await fetch("/api/v1/contact", {
       method: "POST",
@@ -24,6 +26,8 @@ export default function Contact() {
       setStatus("error");
       setMessage("Something went wrong. Please try again.");
     }
+
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -81,10 +85,11 @@ export default function Contact() {
           className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white resize-none"
         />
         <button
+          disabled={isLoading}
           type="submit"
           className="w-full bg-[color:var(--accent)] text-black font-semibold px-6 py-3 rounded-md hover:bg-white transition"
         >
-          Send Message
+          {isLoading ? "Sending..." : "Send Message"}
         </button>
       </form>
     </section>
