@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { weather } from "@/lib/weather/types/weather";
+import { WEATHER_ENDPOINT } from "@/constants/endpoints";
 
-export function useWeather(
+export function useWeatherData(
   lat: number,
   lon: number
 ): { weatherData: weather | null; error: string } {
@@ -29,7 +30,17 @@ export function useWeather(
       }
 
       try {
-        const res = await fetch(`/api/v1/weather?lat=${lat}&lon=${lon}`);
+        // const res = await fetch(`${WEATHER_ENDPOINT}?lat=${lat}&lon=${lon}`);
+        const res = await fetch(WEATHER_ENDPOINT, {
+          method: "POST",
+          body: JSON.stringify({
+            lat,
+            lon,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
         const data = await res.json();
 
         if (res.ok) {

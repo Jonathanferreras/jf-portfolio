@@ -1,12 +1,9 @@
-// /app/api/weather/route.ts (or pages/api/weather.ts for Pages router)
-
-import { fetchWeather } from "@/lib/weather/weather-service";
 import { NextResponse } from "next/server";
+import { fetchWeather } from "@/lib/weather/weather-service";
+import { withAllowedOrigins } from "@/middlewares/cors";
 
-export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
-  const lat = searchParams.get("lat");
-  const lon = searchParams.get("lon");
+export async function postHandler(req: Request) {
+  const { lat, lon } = await req.json();
 
   if (!lat || !lon) {
     return NextResponse.json({ error: "Missing coordinates" }, { status: 400 });
@@ -24,3 +21,5 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "API error" }, { status: 500 });
   }
 }
+
+export const POST = withAllowedOrigins(postHandler);

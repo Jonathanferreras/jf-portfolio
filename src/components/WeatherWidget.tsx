@@ -1,14 +1,15 @@
 "use client";
 
-import { useWeather } from "@/lib/weather/weather-hook";
+import { useWeatherData } from "@/hooks/useWeatherData";
 import { location } from "@/lib/weather/types/location";
+import LoadingIcon from "./icons/LoadingIcon";
 
 type WeatherWidgetProps = {
   location: location;
 };
 
 export default function WeatherWidget({ location }: WeatherWidgetProps) {
-  const { weatherData, error } = useWeather(location.lat, location.lon);
+  const { weatherData, error } = useWeatherData(location.lat, location.lon);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between border border-white rounded-xl px-6 py-6 my-4 w-fit text-white text-sm md:text-base gap-6">
@@ -42,9 +43,7 @@ export default function WeatherWidget({ location }: WeatherWidgetProps) {
           </div>
         </div>
       ) : (
-        <div className="flex items-center gap-6 min-h-[64px] min-w-[200px] justify-center">
-          <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
-        </div>
+        <LoadingIcon />
       )}
     </div>
   );

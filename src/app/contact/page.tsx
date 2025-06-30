@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import { CONTACT_ENDPOINT } from "@/constants/endpoints";
+import LoadingIcon from "@/components/icons/LoadingIcon";
 
 export default function Contact() {
   const [status, setStatus] = useState<"" | "success" | "error">("");
@@ -10,7 +12,7 @@ export default function Contact() {
     e.preventDefault();
     setIsLoading(true);
     const data = new FormData(e.target as HTMLFormElement);
-    const res = await fetch("/api/v1/contact", {
+    const res = await fetch(CONTACT_ENDPOINT, {
       method: "POST",
       body: JSON.stringify(Object.fromEntries(data)),
       headers: {
@@ -62,34 +64,38 @@ export default function Contact() {
 
       <form
         onSubmit={handleSubmit}
-        className="bg-black/40 border border-white/20 backdrop-blur-md p-8 rounded-xl space-y-6"
+        className="bg-black/40 border border-white backdrop-blur-md p-8 rounded-xl space-y-6"
       >
         <input
           name="name"
           placeholder="Your name"
           required
-          className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white"
+          className="w-full bg-transparent border border-white rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white"
         />
         <input
           name="email"
           type="email"
           placeholder="Your email"
           required
-          className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white"
+          className="w-full bg-transparent border border-white rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white"
         />
         <textarea
           name="message"
           placeholder="Your message"
           required
           rows={5}
-          className="w-full bg-transparent border border-white/20 rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white resize-none"
+          className="w-full bg-transparent border border-white rounded-md px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white resize-none"
         />
         <button
           disabled={isLoading}
           type="submit"
           className="w-full bg-[color:var(--accent)] text-black font-semibold px-6 py-3 rounded-md hover:bg-white transition"
         >
-          {isLoading ? "Sending..." : "Send Message"}
+          {isLoading ? (
+            <LoadingIcon classname="mx-auto" color="000" />
+          ) : (
+            "Submit"
+          )}
         </button>
       </form>
     </section>
