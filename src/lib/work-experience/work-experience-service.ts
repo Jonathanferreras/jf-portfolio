@@ -4,9 +4,9 @@ import ComplySciExperience from "./data/complysci.json";
 import TrilogyExperience from "./data/trilogy.json";
 import SouthwestExperience from "./data/southwest.json";
 import MTAExperience from "./data/mta.json";
-import { job } from "./types/job";
+import { Job } from "./types/job";
 
-const getAllWorkExperience: job[] = [
+export const workExperience: Job[] = [
   ShorelightExperience,
   DRLExperience,
   ComplySciExperience,
@@ -16,7 +16,7 @@ const getAllWorkExperience: job[] = [
 ];
 
 export const getSortedWorkExperience = ({ asc } = { asc: true }) =>
-  getAllWorkExperience.sort((a, b) => {
+  workExperience.sort((a, b) => {
     const dateA = new Date(a.startDate).getTime();
     const dateB = new Date(b.startDate).getTime();
 
@@ -24,7 +24,7 @@ export const getSortedWorkExperience = ({ asc } = { asc: true }) =>
   });
 
 export const getWorkExperienceByName = (name: string) =>
-  getAllWorkExperience.find((job) => job.shortName === name);
+  workExperience.find((job) => job.shortName === name);
 
 export const getCareerHighlights = () => {
   const mta = getWorkExperienceByName("mta");
@@ -38,14 +38,14 @@ export const getYearsWorked = () => {
   return firstJob ? calculateYearsSinceDate(firstJob.startDate) : 0;
 };
 
-export const getHoursWorked = () => calculateHoursByJob(getAllWorkExperience);
+export const getHoursWorked = () => calculateHoursByJob(workExperience);
 
 export const getNumOfProjectsWorkedOn = () => {
-  return getAllWorkExperience.flatMap((job) => job.projects || []).length;
+  return workExperience.flatMap((job) => job.projects || []).length;
 };
 
 export const getAllIndustriesWorked = () => {
-  return new Set(getAllWorkExperience.map((job) => job.industry)).size;
+  return new Set(workExperience.map((job) => job.industry)).size;
 };
 
 // Helper Functions
@@ -59,7 +59,7 @@ const calculateYearsSinceDate = (date: string) => {
   return Math.round(diffInYears * 2) / 2;
 };
 
-const calculateHoursByJob = (jobs: job[]) => {
+const calculateHoursByJob = (jobs: Job[]) => {
   const fullTimeHoursPerWeek = 40;
   const partTimeHoursPerWeek = 20;
   let totalHours = 0;
