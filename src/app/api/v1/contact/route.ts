@@ -3,7 +3,7 @@ import { withAllowedOrigins } from "@/middlewares/cors";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function postHandler(req: Request) {
+async function postHandler(req: Request) {
   try {
     const { name, email, message } = await req.json();
     const response = await resend.emails.send({

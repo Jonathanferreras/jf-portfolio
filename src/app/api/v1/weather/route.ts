@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { fetchWeather } from "@/lib/weather/weather-service";
 import { withAllowedOrigins } from "@/middlewares/cors";
 
-export async function postHandler(req: Request) {
+async function postHandler(req: Request) {
   const { lat, lon } = await req.json();
 
   if (!lat || !lon) {
