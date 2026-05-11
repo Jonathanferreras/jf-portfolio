@@ -9,21 +9,8 @@
   "isFullTime": true,
   "technologies": {
     "frontend": ["HTML", "CSS", "Javascript", "React.js", "Redux"],
-    "backend": [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Ruby",
-      "Ruby On Rails",
-      "MySQL"
-    ],
-    "tools": [
-      "ESlint",
-      "Jest",
-      "Docker",
-      "Amazon Web Services (AWS)",
-      "Google Cloud Platform (GCP)"
-    ]
+    "backend": ["Node.js", "Express.js", "MongoDB"],
+    "tools": ["ESlint", "Jest", "Docker"]
   },
   "projects": [
     {
@@ -40,7 +27,7 @@
     }
   ],
   "achievements": [
-    "Automated scoring logic in the Timing & Scoring platform, reducing race downtime by 6.67% and streamlining pilot ranking calculations.",
+    "Automated scoring logic in the Timing & Scoring platform, reducing race downtime by 15% and streamlining pilot ranking calculations.",
     "Refactored the Fleet Management System, improving stability and decoupling components to accelerate future feature development.",
     "Championed agile practices and introduced unit testing, boosting delivery velocity and increasing overall code reliability."
   ],

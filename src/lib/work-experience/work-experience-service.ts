@@ -2,7 +2,6 @@ import ShorelightExperience from "./data/shorelight.json";
 import DRLExperience from "./data/drl.json";
 import ComplySciExperience from "./data/complysci.json";
 import TrilogyExperience from "./data/trilogy.json";
-import SouthwestExperience from "./data/southwest.json";
 import MTAExperience from "./data/mta.json";
 import { job } from "./types/job";
 
@@ -11,7 +10,6 @@ const getAllWorkExperience: job[] = [
   DRLExperience,
   ComplySciExperience,
   TrilogyExperience,
-  SouthwestExperience,
   MTAExperience,
 ];
 
@@ -35,7 +33,10 @@ export const getCareerHighlights = () => {
 
 export const getYearsWorked = () => {
   const firstJob = getWorkExperienceByName("mta");
-  return firstJob ? calculateYearsSinceDate(firstJob.startDate) : 0;
+  const lastJob = getWorkExperienceByName("shorelight");
+  return firstJob && lastJob
+    ? calculateYearsSinceDate(firstJob.startDate, lastJob?.endDate)
+    : 0;
 };
 
 export const getHoursWorked = () => calculateHoursByJob(getAllWorkExperience);
@@ -50,10 +51,10 @@ export const getAllIndustriesWorked = () => {
 
 // Helper Functions
 
-const calculateYearsSinceDate = (date: string) => {
-  const startDate = new Date(date);
-  const currentDate = new Date();
-  const diffInMs = currentDate.getTime() - startDate.getTime();
+const calculateYearsSinceDate = (startDateStr: string, endDateStr: string) => {
+  const startDate = new Date(startDateStr);
+  const endDate = new Date(endDateStr);
+  const diffInMs = endDate.getTime() - startDate.getTime();
   const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25); // accurate average year
 
   return Math.round(diffInYears * 2) / 2;
@@ -69,7 +70,7 @@ const calculateHoursByJob = (jobs: job[]) => {
     const start = new Date(startDate);
     const end = endDate ? new Date(endDate) : new Date();
     const weeksWorked = Math.floor(
-      (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24 * 7)
+      (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24 * 7),
     );
     const weeklyHours = isFullTime
       ? fullTimeHoursPerWeek

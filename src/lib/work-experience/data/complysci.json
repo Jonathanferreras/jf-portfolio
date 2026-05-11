@@ -9,7 +9,7 @@
   "isFullTime": true,
   "technologies": {
     "frontend": ["HTML", "CSS", "Javascript", "Typescript", "Vue.js", "Vuex"],
-    "backend": ["C#", ".NET"],
+    "backend": [""],
     "tools": ["ESlint"]
   },
   "projects": [
@@ -20,7 +20,7 @@
   ],
   "achievements": [
     "Owned U.S. frontend development, building and maintaining Vue.js components to enhance user experience and performance.",
-    "Quickly ramped up on unfamiliar tech, becoming productive in Vue.js and contributing to .NET backend features.",
+    "Quickly ramped up on unfamiliar tech, becoming productive in Vue.js and developing key product features.",
     "Strengthened team delivery through effective communication with offshore developers, ensuring high-quality releases in a fast-paced Agile environment."
   ],
   "logo": "/images/complysci-logo.png",

@@ -18,7 +18,7 @@
       "Redux"
     ],
     "backend": ["Node.js", "Express.js", "MongoDB", "MySQL", "Sequelize"],
-    "tools": ["ESlint", "Jest", "Docker", "Firebase"]
+    "tools": ["ESlint", "Jest", "Firebase"]
   },
   "projects": [],
   "achievements": [

@@ -5,7 +5,7 @@
   "industry": "education",
   "position": "Senior Software Engineer",
   "startDate": "11/20/2023",
-  "endDate": "",
+  "endDate": "06/13/2025",
   "isFullTime": true,
   "technologies": {
     "frontend": [
@@ -16,13 +16,12 @@
       "Redux",
       "Material UI"
     ],
-    "backend": ["Node.js", "Express.js", "Java", "Spring Boot", "PostGreSQL"],
+    "backend": ["Node.js", "Express.js"],
     "tools": [
       "ESlint",
       "Jest",
       "Storybook",
       "Contentful",
-      "Salesforce",
       "Docker",
       "Kubernetes",
       "Amazon Web Services (AWS)",
@@ -43,8 +42,8 @@
       "description": "A universal library of UI components built with React.js and Material UI, designed to ensure consistency and reusability across all Shorelight applications."
     },
     {
-      "name": "Multi Factor Authentication Service",
-      "description": "Implemented a secure multi-factor authentication service to enhance the security of user accounts across Shorelight's platforms."
+      "name": "Multi Factor Authentication User Workflow",
+      "description": "Integrated a secure multi-factor authentication workflow to enhance the security of user accounts across Shorelight's platforms."
     },
     {
       "name": "Shorelight's Student Marketplace",
@@ -52,8 +51,8 @@
     }
   ],
   "achievements": [
-    "Led architectural design for the company’s new Marketplace platform, promoting reusability and scalability across micro-frontends.",
-    "Spearheaded MFA integration with AWS and Okta, enhancing security for the admissions portal.",
+    "Led architectural design for the company's new Marketplace platform, promoting reusability and scalability across micro-frontends.",
+    "Spearheaded MFA integration across various company platforms, enhancing security and reducing risk.",
     "Established frontend unit testing standards, creating documentation and improving code quality across teams."
   ],
   "logo": "/images/shorelight-logo.png",

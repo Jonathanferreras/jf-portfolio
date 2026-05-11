@@ -22,24 +22,8 @@
       "IOS",
       "Visual Basic (VB)"
     ],
-    "backend": [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "C#",
-      ".NET",
-      "Microsoft SQL Server (MSSQL)",
-      "Python",
-      "Django"
-    ],
-    "tools": [
-      "ESlint",
-      "Mocha",
-      "Chai",
-      "Azure",
-      "Amazon Web Services (AWS)",
-      "Jenkins"
-    ]
+    "backend": ["Node.js", "Express.js", "MongoDB", "Python"],
+    "tools": ["ESlint", "Amazon Web Services (AWS)"]
   },
   "projects": [
     {
@@ -89,8 +73,8 @@
   ],
   "achievements": [
     "Developed and maintained high-impact apps, including train arrival displays, transit dashboards, and public info systems across web and mobile platforms.",
-    "Engineered full-stack solutions using React, Node.js, .NET, SQL Server, and AWS, contributing to performance-critical systems like the MTA Performance Dashboard and Metro North Trip Planner.",
-    "Built internal tools and automation workflows, including Visual Basic and Python scripts for metro card generation and S3-based data processing, improving operational efficiency across teams."
+    "Engineered full-stack solutions using React, Node.js, and AWS, contributing to performance-critical systems like the MTA Performance Dashboard and Metro North Trip Planner.",
+    "Built internal tools and automation workflows for metro card generation and S3-based data processing, improving operational efficiency across teams."
   ],
   "logo": "/images/mta-logo.png",
   "video": "/videos/mta-video.mp4",

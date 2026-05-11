@@ -76,7 +76,7 @@ export default function Home() {
             <span className="text-[color:var(--accent)] font-black">
               +{yearsWorked}
             </span>{" "}
-            years in <br /> the industry specializing in full-stack <br />{" "}
+            years in <br /> the industry specializing in frontend <br />{" "}
             software engineering.
           </p>
           <div className="flex flex-col items-center gap-4 text-lg sm:text-xl md:text-2xl font-light mb-12 w-full">
@@ -118,7 +118,7 @@ export default function Home() {
             CAREER <br /> HIGHLIGHTS
           </h1>
           <p className="text-xl sm:text-2xl text-center sm:text-left self-center sm:self-start mt-1 mb-10 sm:mb-20 text-gray-400">
-            From designing rich web & mobile applications to building API
+            From designing rich web & mobile applications to integrating API
             services, I have crafted <br /> scalable, user-focused solutions
             that bridge creativity and functionality, delivering <br />
             impactful digital experiences.
@@ -177,7 +177,7 @@ export default function Home() {
                             <li key={i} className="text-gray-300">
                               {achievement}
                             </li>
-                          )
+                          ),
                         )}
                       </ul>
                       <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[var(--background)] to-transparent pointer-events-none flex items-end justify-end pr-2 pb-1">
@@ -264,7 +264,7 @@ export default function Home() {
                             <li key={i} className="text-gray-300">
                               {achievement}
                             </li>
-                          )
+                          ),
                         )}
                       </ul>
                       <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[var(--background)] to-transparent pointer-events-none flex items-end justify-end pr-2 pb-1">
